@@ -7,7 +7,7 @@
 .sub-container
     {
         height: 11rem;
-        margin: 0rem 4rem;
+        margin: 0rem 3rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -32,18 +32,18 @@ span
         }
 .sfi
     {
-        width: 18rem;
+        width: 22rem;
         height: 2.5rem;
         padding: 0rem 1rem;
-        border-radius: 15px;
-        font-size: 25px;
-        color: black;
+        border-radius: 14px;
+        font-size: 20px;
     }
 .button-style
     {
-        width: 360px;
+        width: 545px;
         height: 50px;
-        margin: 0rem auto;
+        margin-top: -1.5rem;
+        margin-left: 20rem;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -52,11 +52,10 @@ span
     }
 .btn
     {
-        width: 126px;
-        height: 33px;
+        width: 125px;
+        height: 44px;
         border-radius: 11px;
         background-color: red;
-        border: none;
         font-weight: bolder;
         color: white;
         cursor: pointer;
@@ -64,7 +63,6 @@ span
     .btn:hover
     {
         color: yellow;
-        outline: white;
         background-color: rgb(190, 6, 6);
         transition-duration: 1s;
     }

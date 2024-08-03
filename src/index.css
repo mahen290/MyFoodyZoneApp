@@ -3,11 +3,11 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        overflow-x: hidden;
     }
 body
     { 
-        /* s  */
+        width: 100%;
         min-height: 100vh;
-        max-height: auto;
+        max-height: max-content;
+        background: linear-gradient(rgb(248, 129, 248), rgb(167, 135, 167), rgb(109, 99, 109) );
     }

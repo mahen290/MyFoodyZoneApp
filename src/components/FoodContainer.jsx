@@ -2,9 +2,11 @@ import React from 'react';
 import './FoodContainer.css';
 
 function FoodContainer( { setSearch } ) {
+
   const handleSearchChange = (event) => {
     setSearch(event.target.value) 
   };
+  
   return (
     <div>
        <div className = "main-container">

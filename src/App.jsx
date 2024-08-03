@@ -6,34 +6,36 @@ import { useEffect, useState } from 'react';
 
 const BASE_URL = "https://localhost:9000/";
 
-function App() {
+function App() 
+{
 
-  const [ data, setData ] = useState();
-  const [ loading, setLoading ] = useState();
-  const [ error,  setError ] = useState();
+    const [ data, setData ] = useState(BASE_URL);
+    const [ loading, setLoading ] = useState();
+    const [ error,  setError ] = useState();
 
-  async function fetchFoodData() {
-    setLoading(true);
-
-    try 
+    async function fetchFoodData() 
     {
-      const response = await fetch(BASE_URL);
-      const result = await response.json();
-      console.log("FoodData_Result", result);
-      setData(result);
-      setLoading(false);
-    }
-    catch (err) 
-    {
-      setError("Unable To Fetch Data");
-    }
-  };
+        setLoading(true);
 
-  useEffect( () => {
-    fetchFoodData();
-  }, []);
+        try 
+        {
+            const response = await fetch();
+            const result = await response.json();
+            console.log("FoodData_Result", result);
+            setData(result);
+            setLoading(false);
+        }
+        catch (err) 
+        {
+            setError("Unable To Fetch Data");
+        }
+    };
 
-  console.log(data);
+      useEffect( () => {
+        fetchFoodData();
+      },[]);
+
+      console.log(data);
 
   if (error) 
     {

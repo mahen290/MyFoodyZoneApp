@@ -8,7 +8,7 @@ h1
         text-align: center;
         color: blue;
         text-shadow: 1px 1px 1px black;
-        opacity: 0.72;
+        opacity: 0.79;
     }
     h1:hover 
         {
@@ -18,12 +18,12 @@ h1
     {
         width: 100%;
         background-attachment: fixed;
-        background-position-y: 35%;
-        opacity: 0.45;
+        border-top: 1px solid white;
+        opacity: 0.33;
     }
     .bg-img:hover
         {
-            opacity: 0.75;
-            transition-duration: 2s;
+            opacity: 0.55;
+            transition-duration: 1s;
         }
 
