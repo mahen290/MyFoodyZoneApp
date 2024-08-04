@@ -4,7 +4,7 @@ import FoodContainer from './components/FoodContainer';
 import FoodyWallpaper from './assets/Foody_Wallpaper.jpg';
 import { useEffect, useState } from 'react';
 
-const BASE_URL = "https://localhost:9000/";
+const BASE_URL = "https://localhost:9000";
 
 function App() 
 {
@@ -12,6 +12,7 @@ function App()
     const [ data, setData ] = useState(BASE_URL);
     const [ loading, setLoading ] = useState();
     const [ error,  setError ] = useState();
+    const [ search, setSearch ] = useState();
 
     async function fetchFoodData() 
     {
@@ -21,7 +22,7 @@ function App()
         {
             const response = await fetch();
             const result = await response.json();
-            console.log("FoodData_Result", result);
+            console.log("Result", result);
             setData(result);
             setLoading(false);
         }
@@ -35,8 +36,6 @@ function App()
         fetchFoodData();
       },[]);
 
-      console.log(data);
-
   if (error) 
     {
       return <div> { error } </div>
@@ -49,7 +48,7 @@ function App()
   return (
     <div>
       <h1> Most Welcome In My Foody Zone App </h1>
-      <FoodContainer />
+      <FoodContainer setSearch = { search } />
       <img src = { FoodyWallpaper } alt = "FoodyWallpaper" className = "bg-img" />
     </div>
   );

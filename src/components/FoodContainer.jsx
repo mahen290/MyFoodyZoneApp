@@ -4,7 +4,8 @@ import './FoodContainer.css';
 function FoodContainer( { setSearch } ) {
 
   const handleSearchChange = (event) => {
-    setSearch(event.target.value) 
+    console.log(event); 
+    setSearch(event.target.value)
   };
   
   return (
