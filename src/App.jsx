@@ -48,7 +48,7 @@ function App()
   return (
     <div>
       <h1> Most Welcome In My Foody Zone App </h1>
-      <FoodContainer setSearch = { search } />
+      <FoodContainer search = { search } />
       <img src = { FoodyWallpaper } alt = "FoodyWallpaper" className = "bg-img" />
     </div>
   );
